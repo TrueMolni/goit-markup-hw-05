@@ -362,6 +362,8 @@ button {
     background: var(--hero-btn-blue);
 }
 
+/******* Модальне вікно *******/
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -372,8 +374,8 @@ button {
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity var(--animation-duration) var(--animation-cubic), 
-    transform var(--animation-duration) var(--animation-cubic);
+    transition: opacity var(--animation-duration) var(--animation-cubic),
+    visibility var(--animation-duration) var(--animation-cubic);
 }
 
 .backdrop.is-hidden {
@@ -401,7 +403,8 @@ button {
 
     transform: translate(-50%, -50%) scale(1);
 
-   
+    transition: transform var(--animation-duration) var(--animation-cubic),
+    visibility var(--animation-duration) var(--animation-cubic);
 }
 
 .close-btn {
